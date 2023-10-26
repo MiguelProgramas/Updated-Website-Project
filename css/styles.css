@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Seleciona a tag "html" e aplica o efeito de animação em links de âncora internos (uma animação é efetuada
+quando o usuário apertar em um botão da barra de navegação, ao invés de ir direto ao "id" especificado).*/
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(rgba(2,0,36,1) 0%, rgba(175,35,200,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: Verdana, sans-serif;
+}
+
+/* Seleciona a tag "body" e aplica o fundo e fonte da página. */
+
+h1, h2 {
+    display:flex;
+    justify-content: center;
+}
+
+/* Seleciona ambas as tags "h1" e "h2" e alinha-nos ao centro usando a propriedade "flex". */
+
+h1 {
+    color:white;
+}
+
+/* Seleciona a tag "h1" e aplica a cor branca aos headers 1. */
+
+h2 {
+    font-size: large;
+}
+
+/* Seleciona a tag "h2" e aplica o tamanho de fonte grande aos headers 2. */
+
+img {
+    width: 50%;
+    height: 50%;
+    border-radius: 25%;
+    align-items: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seleciona a tag "img" e deixa com metade do tamanho original, redondas, e centralizadas as imagens da página. */
+
+#linguagens {
+    font-size:x-large;
+    text-align: center;  
+}
+
+/* Seleciona o "id" específico e aplica um tamanho de fonte grande e centraliza o texto. */
+
+h3 {
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:2%;
+    display:inline-block;
+}
+
+/* Seleciona a tag "h3" e deixa com fundo preto e texto branco, alinhado no centro, e preenchimento pequeno
+e bloco de linha para preencher toda a linha. */
+
+#barranav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+/*  */
+
+#barranav > li {
+    float: left;
+}
+
+#barranav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#barranav li a:hover {
+    background-color: #111;
+}
+
+#introduchabil {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.silhueta {
+    border: solid 1px white;
+    border-radius: 5%;
+    background-color: aliceblue;
+    margin:5%;
+    box-shadow:10px 10px 8px #888888;
+    text-align: center;
+}
+
+.silhueta h1 {
+    color:black;
+}
+
+#habilidadesInteiras h3 {
+    display:block;
+    font-size: x-large;
+    text-align: center;
+}
+
+#habilidadesInteiras > h2 {
+    text-align: center;
+    display:flex;
+    flex-wrap:wrap;
+    margin:1%;
+}
+
+#contatoInteiro > h2 {
+    margin:2%;
+}
+
+#contatos li {
+    display:block;
+    text-align: center;
+    font-size:medium;
+}
+
+#contatos a {
+    text-decoration: none;
+    color:black;
+}
+
+#contatos a:hover {
+    color:#777;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #6e07ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #ffffff;
+    color: #00d4ff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+#formulário {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin:2%;
+}
+
+@media only screen and (min-width: 768px) {
+    #contatos li {
+        font-size: x-large;
+    }
+}
