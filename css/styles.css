@@ -69,13 +69,21 @@ e bloco de linha para preencher toda a linha. */
     background-color: #333;
     position: sticky;
     top: 0;
+    display:flex;
+    min-width: 50%;
+    font-size: x-small;
 }
 
-/*  */
+
+/* Seleciona o "id" da barra de navegação e retira os "bullet points", aplica margem e recheio 0 em prol da estética.
+O overflow é usado para a cor de fundo ser aplicada até o final horizontalmente. A posição "sticky" garante que a
+navBar nunca saia da tela. "Top 0" garante que a navBar fique no topo da tela, e a barra de navegação também é flexível.*/
 
 #barranav > li {
     float: left;
 }
+
+/* Os elementos da navBar ficam na esquerda. */
 
 #barranav li a {
     display: block;
@@ -83,16 +91,32 @@ e bloco de linha para preencher toda a linha. */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-right: 1px solid white;
 }
 
+/* Apenas a aparência dos elementos âncora da navBar. */
+
 #barranav li a:hover {
-    background-color: #111;
+    background-color: white;
+    color:black;
 }
+
+/* Animação de mudança de cor quando o mouse fluturar sobre os elementos âncora da navBar. */
+
+#navBarRight {
+    width:5%;
+    min-width:100px;
+    background-color: #999;
+}
+
+/* O elemento à direita na navBar possui tamanho mínimo e cor específica.  */
 
 #introduchabil {
     display:flex;
     flex-wrap: wrap;
 }
+
+/* A introdução da área de habilidades sempre enrolará a si mesmo. */
 
 .silhueta {
     border: solid 1px white;
@@ -103,9 +127,14 @@ e bloco de linha para preencher toda a linha. */
     text-align: center;
 }
 
+/* Uma classe que proporciona a silhueta de seus elementos-fihlhos, incluindo um fundo e borda específico, com
+alinhamento de texto, margem, sombra e arredondamento de borda. */
+
 .silhueta h1 {
     color:black;
 }
+
+/* A cor dos headers-filhos da classe silhueta será preta. */
 
 #habilidadesInteiras h3 {
     display:block;
@@ -113,12 +142,16 @@ e bloco de linha para preencher toda a linha. */
     text-align: center;
 }
 
+/* O texto "h3" inteiro das habilidades aparecerá como um bloco e terá alinhamento e tamanho de fonte específicos. */
+
 #habilidadesInteiras > h2 {
     text-align: center;
     display:flex;
     flex-wrap:wrap;
     margin:1%;
 }
+
+/* O texto "h2" inteiro também terá propriedades distintas, com alinhamento de texto, enrolamento e margem específicas. */
 
 #contatoInteiro > h2 {
     margin:2%;
@@ -168,8 +201,34 @@ input[type=submit] {
     margin:2%;
 }
 
+.imagensLogo {
+    background-color: whitesmoke;
+    width:10%;
+    min-width:100px;
+}
+
+#barranav > #voltar {
+    white-space: nowrap;
+    float:right;
+    margin-right: 2%;
+}
+
 @media only screen and (min-width: 768px) {
     #contatos li {
         font-size: x-large;
+    }
+    #navBarRight {
+        float:right;
+        border-left: none;
+    }
+    #voltar {
+        float:right;
+        margin-left: 20%;
+        border-left: 1px solid white;
+        margin-right: 0%;
+    }
+    #barranav  {
+        width:100%;
+        font-size: large;
     }
 }

@@ -11,19 +11,21 @@
 <body>
 
     <ul id="barranav">
-        <li><a class="active" href="#sobre">Sobre</a></li>
+        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#contato">Contato</a></li>
+        <li id="voltar"><a href="#topo">Aperte para voltar!</a></li>
+        <li><div id="navBarRight"><button><img src="/images/Lupa.png" alt="Lupa de pesquisa"></button></div></li>
     </ul>
 
     <!--Esse código representa a barra de navegação do website. -->
 
-    <h1>Pereira Lima. Miguel Pereira Lima.</h1>
+    <h1 id="topo">Pereira Lima. Miguel Pereira Lima.</h1>
     <h1>Sou um programador.</h1>
 
     <!--Apenas dois headers grandes. -->
 
-    <img src="/images/Morgana.jpg" alt="Avatar" id="sobre">
+    <a href="https://www.youtube.com/watch?v=9jPNe_dKm0w"><img src="/images/Morgana.jpg" alt="Avatar" id="sobre"></a>
 
     <!--O avatar escolhido como imagem principal. -->
 
@@ -76,7 +78,8 @@
         <h2>Você pode me encontrar numa variedade de lugares, desde a minha casa, até alguns meios eletrônicos:</h2>
 
         <ul id="contatos">
-            <li><a href="https://github.com/MiguelProgramas">Github (clique-me!)</a></li>
+            <li><a href="https://github.com/MiguelProgramas">Github (clique-me!) <img class="imagensLogo" src="images/github.png"></a></li>
+            <li><a href="https://www.codewars.com/users/MiguelProgramas">Codewars (clique-me!) <img class="imagensLogo" src="images/codewars.svg"></a></li>
             <li id="opa">Ou e-mail: miguel.p.rograma.lima.tsis@gmail.com</li>
         </ul>
 
@@ -91,6 +94,9 @@
 
         <label for ="segundoNome">Sobrenome</label>
         <input type="text" id="segundoNome" name="segundissimo" placeholder="Seu sobrenome...">
+
+        <label for ="e-mail">E-mail</label>
+        <input type="text" id="e-mail" name="e-mail" placeholder="Seu e-mail...">
 
         <label for ="mensagem">Mensagem</label>
         <input type="text" id="mensagem" name="mensagem" placeholder="Sua mensagem...">
