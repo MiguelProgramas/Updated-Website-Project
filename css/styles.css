@@ -1,0 +1,257 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Seleciona a tag "html" e aplica o efeito de animação em links de âncora internos (uma animação é efetuada
+quando o usuário apertar em um botão da barra de navegação, ao invés de ir direto ao "id" especificado).*/
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(rgba(2,0,36,1) 0%, rgba(175,35,200,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: Verdana, sans-serif;
+}
+
+/* Seleciona a tag "body" e aplica o fundo e fonte da página. */
+
+h1, h2 {
+    display:flex;
+    justify-content: center;
+}
+
+/* Seleciona ambas as tags "h1" e "h2" e alinha-nos ao centro usando a propriedade "flex". */
+
+h1 {
+    color:white;
+}
+
+/* Seleciona a tag "h1" e aplica a cor branca aos headers 1. */
+
+h2 {
+    font-size: large;
+}
+
+/* Seleciona a tag "h2" e aplica o tamanho de fonte grande aos headers 2. */
+
+img {
+    width: 50%;
+    height: 50%;
+    border-radius: 25%;
+    align-items: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seleciona a tag "img" e deixa com metade do tamanho original, redondas, e centralizadas as imagens da página. */
+
+#linguagens {
+    font-size:x-large;
+    text-align: center;  
+}
+
+/* Seleciona o "id" específico e aplica um tamanho de fonte grande e centraliza o texto. */
+
+h3 {
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:2%;
+    display:inline-block;
+}
+
+/* Seleciona a tag "h3" e deixa com fundo preto e texto branco, alinhado no centro, e preenchimento pequeno
+e bloco de linha para preencher toda a linha. */
+
+#barranav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    display:flex;
+    min-width: 50%;
+    font-size: x-small;
+}
+
+
+/* Seleciona o "id" da barra de navegação e retira os "bullet points", aplica margem e recheio 0 em prol da estética.
+O overflow é usado para a cor de fundo ser aplicada até o final horizontalmente. A posição "sticky" garante que a
+navBar nunca saia da tela. "Top 0" garante que a navBar fique no topo da tela, e a barra de navegação também é flexível.*/
+
+#barranav > li {
+    float: left;
+}
+
+/* Os elementos da navBar ficam na esquerda. */
+
+#barranav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid white;
+}
+
+/* Apenas a aparência dos elementos âncora da navBar. */
+
+#barranav li a:hover {
+    background-color: white;
+    color:black;
+}
+
+/* Animação de mudança de cor quando o mouse fluturar sobre os elementos âncora da navBar. */
+
+#navBarRight {
+    width:5%;
+    min-width:100px;
+    background-color: #999;
+}
+
+/* O elemento à direita na navBar possui tamanho mínimo e cor específica.  */
+
+#introduchabil {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* A introdução da área de habilidades sempre enrolará a si mesmo. */
+
+.silhueta {
+    border: solid 1px white;
+    border-radius: 5%;
+    background-color: aliceblue;
+    margin:5%;
+    box-shadow:10px 10px 8px #888888;
+    text-align: center;
+}
+
+/* Uma classe que proporciona a silhueta de seus elementos-fihlhos, incluindo um fundo e borda específico, com
+alinhamento de texto, margem, sombra e arredondamento de borda. */
+
+.silhueta h1 {
+    color:black;
+}
+
+/* A cor dos headers-filhos da classe silhueta será preta. */
+
+#habilidadesInteiras h3 {
+    display:block;
+    font-size: x-large;
+    text-align: center;
+}
+
+/* O texto "h3" inteiro das habilidades aparecerá como um bloco e terá alinhamento e tamanho de fonte específicos. */
+
+#habilidadesInteiras > h2 {
+    text-align: center;
+    display:flex;
+    flex-wrap:wrap;
+    margin:1%;
+}
+
+/* O texto "h2" inteiro também terá propriedades distintas, com alinhamento de texto, enrolamento e margem específicas. */
+
+#contatoInteiro > h2 {
+    margin:2%;
+}
+
+/* A seção de contatos agorá terá uma margem de 2% sobre todo o seu elemento. */
+
+#contatos li {
+    display:block;
+    text-align: center;
+    font-size:medium;
+}
+
+/* Os elementos de lista da seção de contatos serão enviados para o centro do elemento, e sua fonte será mediana em tamanho. */
+
+#contatos a {
+    text-decoration: none;
+    color:black;
+}
+
+/* Os elementos-âncora da seção de contatos não possuiram decoração de texto, junto com sua cor de texto ser preta.*/
+
+#contatos a:hover {
+    color:#777;
+}
+
+/* Ao flutuar sobre os elementos-âncora da seção de contatos, sua cor trocará para um preto mais claro. */
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #6e07ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* A estilização dos campos de texto e de selecionar do formulário no final da página. Ela inclui largura, padding, e margem especificas, graças à condição: "inline-block".
+Uma borda levemente arredondada é também aplicada sobre os elementos.*/
+
+input[type=submit] {
+    width: 100%;
+    background-color: #ffffff;
+    color: #00d4ff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+/* A estilização do botão de "enviar" do formulário no final da página. Uma largura e margem, padding e borda são aplicados, como no código anterior. A cor do texto é definida, 
+junto com a cor de fundo e o tamanho da fonte. O cursor, após flutuar sobre o elemento, é alterado para o de um objeto "clicável" (com o dedo indicador sobre o botão).*/
+
+#formulário {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin:2%;
+}
+
+/* O formulário terá uma borda levemente arredondada; sua cor de fundo será branca; possuirá padding e margem mínimas também. */
+
+.imagensLogo {
+    background-color: whitesmoke;
+    width:10%;
+    min-width:100px;
+}
+
+/* Define a cor de fundo dos elementos-imagem os quais correspondem às imagens-ícone no final da página. Adicionalmente, a largura e largura-mínima são especificados. */
+
+#barranav > #voltar {
+    white-space: nowrap;
+    float:right;
+    margin-right: 2%;
+}
+
+/* Especifica uma estilização apenas para o "id": "voltar", o qual está dentro do "id": "barranav". O "id" especificado não se embrulhará por espaços em branco, ficará na direita, 
+e possuirá uma margem-direita de 2% para se distanciar do elemento-lupa da navBar.*/
+
+@media only screen and (min-width: 768px) {
+    #contatos li {
+        font-size: x-large;
+    }
+    #navBarRight {
+        float:right;
+        border-left: none;
+    }
+    #voltar {
+        float:right;
+        margin-left: 20%;
+        border-left: 1px solid white;
+        margin-right: 0%;
+    }
+    #barranav  {
+        width:100%;
+        font-size: large;
+    }
+}
+
+/* Define a responsividade da página. Caso a tela do usuário não seja a de um celular, os seguintes atributos serão aplicados, ou seja, o site se torna para um computador. */

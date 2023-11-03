@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">
+    <link rel="icon" type="image/png" href="images/js.png"/>
+    <title>Meu perfil</title>
+</head>
+<body>
+
+    <ul id="barranav">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li id="voltar"><a href="#topo">Aperte para voltar!</a></li>
+        <li><div id="navBarRight"><button><img src="/images/Lupa.png" alt="Lupa de pesquisa"></button></div></li>
+    </ul>
+
+    <!--Esse código representa a barra de navegação do website. -->
+
+    <h1 id="topo">Pereira Lima. Miguel Pereira Lima.</h1>
+    <h1>Sou um programador.</h1>
+
+    <!--Apenas dois headers grandes. -->
+
+    <a href="https://www.youtube.com/watch?v=9jPNe_dKm0w"><img src="/images/Morgana.jpg" alt="Avatar" id="sobre"></a>
+
+    <!--O avatar escolhido como imagem principal. -->
+
+    <div class="silhueta">
+        <h1>Sobre</h1>
+        <h2>Sou Miguel Pereira Lima</h2>
+        <h2>Programador-iniciante</h2>
+        <h2>Já conheci algumas linguagens de programação e marcação, como:</h2>
+    
+        <div id="linguagens">
+            <h3>HTML</h3> 
+            <h3>CSS</h3>
+            <h3>Python</h3>
+            <h3>Javascript</h3>
+            <h3>E mais!</h3>
+        </div>
+    </div>
+
+    <!-- A classe "silhueta" aparecerá de forma recorrente por todo o código. Ela cria a silhueta branca por trás
+    dos elementos. Esse código em si aplica a silhueta sobre o "sobre" inteiro, incluindo os headers 1, 2 e 3.
+        O "id": "linguagens" apenas especifica a aparência das linguagens apresentadas.-->
+
+    <div class="silhueta">
+        <h1 id="habilidades">Habilidades</h1>
+        <h2 id="introduchabil">Apenas seria normal querer saber mais sobre mim, eis algumas das minhas mais relevantes <i>skills</i>.</h2>
+        <div id="habilidadesInteiras">
+            <h3>HTML</h3>
+            <h2>É a linguagem de marcação usada para criar a estrutura de uma página da WEB. O mais básico do básico, foi o meu primeiro contato com programação.</h2>
+
+            <h3>CSS</h3>
+            <h2>A linguagem de estilização usada para trazer cores e beleza à uma página da WEB HTML. Pense nisso
+                como as roupas de um manequim. Foi a minha segunda experiência com programação.
+            </h2>
+
+            <h3>Python</h3>
+            <h2>A minha primeira linguagem de programação, e uma das mais populares no mundo, também.
+                É extremamente útil em automação, e bem fácil de aprender para iniciantes!
+            </h2>
+
+            <h3>Javascript</h3>
+            <h2>Uma das linguagens mais usadas internacionalmente. Essa é a minha preferida. Pratico-a sempre que posso para me tornar o melhor nela.</h2>
+        </div>
+    </div>
+
+    <!-- Esse código inteiro apenas se auto-aplica a silhueta, e também especifica a aparência dos headers
+    utilizados com seus múltilos "id"s isolados. Isso constitui a página de habilidades.-->
+
+    <div class="silhueta" id="contatoInteiro">
+        <h1 id="contato">Contato</h1>
+        <h2>Você pode me encontrar numa variedade de lugares, desde a minha casa, até alguns meios eletrônicos:</h2>
+
+        <ul id="contatos">
+            <li><a href="https://github.com/MiguelProgramas">Github (clique-me!) <img class="imagensLogo" src="images/github.png"></a></li>
+            <li><a href="https://www.codewars.com/users/MiguelProgramas">Codewars (clique-me!) <img class="imagensLogo" src="images/codewars.svg"></a></li>
+            <li id="opa">Ou e-mail: miguel.p.rograma.lima.tsis@gmail.com</li>
+        </ul>
+
+        <h2>Ou pule as formalidades e envie-me uma mensagem diretamente!</h2>
+    </div>
+
+    <!-- A silhueta é mais uma vez aplicada. Os "id"s especificam a sua aparência e tudo compõe a página de contato.-->
+
+    <form id="formulário">
+        <label for ="primeiroNome">Nome</label>
+        <input type="text" id="primeiroNome" name="primeirissimo" placeholder="Seu nome...">
+
+        <label for ="segundoNome">Sobrenome</label>
+        <input type="text" id="segundoNome" name="segundissimo" placeholder="Seu sobrenome...">
+
+        <label for ="e-mail">E-mail</label>
+        <input type="text" id="e-mail" name="e-mail" placeholder="Seu e-mail...">
+
+        <label for ="mensagem">Mensagem</label>
+        <input type="text" id="mensagem" name="mensagem" placeholder="Sua mensagem...">
+
+        <label for ="motivo">Motivo de sua mensagem</label>
+        <select id="motivo" name="motivo">
+            <option value="Crítica construtiva">Crítica construtiva</option>
+            <option value="Mensagem positiva">Mensagem positiva</option>
+            <option value="Outro">Outro (surpreenda-me!)</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <!--Esse é o código do formulário. O "id" especifica a sua aparência, e o corpo é relativamente simples.
+        Ele usa de diferentes tipos de input.-->
+
+</body>
+</html>
