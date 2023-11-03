@@ -157,20 +157,28 @@ alinhamento de texto, margem, sombra e arredondamento de borda. */
     margin:2%;
 }
 
+/* A seção de contatos agorá terá uma margem de 2% sobre todo o seu elemento. */
+
 #contatos li {
     display:block;
     text-align: center;
     font-size:medium;
 }
 
+/* Os elementos de lista da seção de contatos serão enviados para o centro do elemento, e sua fonte será mediana em tamanho. */
+
 #contatos a {
     text-decoration: none;
     color:black;
 }
 
+/* Os elementos-âncora da seção de contatos não possuiram decoração de texto, junto com sua cor de texto ser preta.*/
+
 #contatos a:hover {
     color:#777;
 }
+
+/* Ao flutuar sobre os elementos-âncora da seção de contatos, sua cor trocará para um preto mais claro. */
 
 input[type=text], select {
     width: 100%;
@@ -181,6 +189,9 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+/* A estilização dos campos de texto e de selecionar do formulário no final da página. Ela inclui largura, padding, e margem especificas, graças à condição: "inline-block".
+Uma borda levemente arredondada é também aplicada sobre os elementos.*/
 
 input[type=submit] {
     width: 100%;
@@ -194,6 +205,9 @@ input[type=submit] {
     font-size: xx-large;
 }
 
+/* A estilização do botão de "enviar" do formulário no final da página. Uma largura e margem, padding e borda são aplicados, como no código anterior. A cor do texto é definida, 
+junto com a cor de fundo e o tamanho da fonte. O cursor, após flutuar sobre o elemento, é alterado para o de um objeto "clicável" (com o dedo indicador sobre o botão).*/
+
 #formulário {
     border-radius: 5px;
     background-color: #ffffff;
@@ -201,17 +215,24 @@ input[type=submit] {
     margin:2%;
 }
 
+/* O formulário terá uma borda levemente arredondada; sua cor de fundo será branca; possuirá padding e margem mínimas também. */
+
 .imagensLogo {
     background-color: whitesmoke;
     width:10%;
     min-width:100px;
 }
 
+/* Define a cor de fundo dos elementos-imagem os quais correspondem às imagens-ícone no final da página. Adicionalmente, a largura e largura-mínima são especificados. */
+
 #barranav > #voltar {
     white-space: nowrap;
     float:right;
     margin-right: 2%;
 }
+
+/* Especifica uma estilização apenas para o "id": "voltar", o qual está dentro do "id": "barranav". O "id" especificado não se embrulhará por espaços em branco, ficará na direita, 
+e possuirá uma margem-direita de 2% para se distanciar do elemento-lupa da navBar.*/
 
 @media only screen and (min-width: 768px) {
     #contatos li {
@@ -232,3 +253,5 @@ input[type=submit] {
         font-size: large;
     }
 }
+
+/* Define a responsividade da página. Caso a tela do usuário não seja a de um celular, os seguintes atributos serão aplicados, ou seja, o site se torna para um computador. */
