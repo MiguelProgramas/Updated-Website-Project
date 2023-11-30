@@ -50,6 +50,12 @@ img {
 
 /* Seleciona o "id" específico e aplica um tamanho de fonte grande e centraliza o texto. */
 
+#linguagens, #habilidadesInteiras, #contatos {
+    transition: 500ms;
+} 
+
+/* Todas as animações derivadas desses "id"s seram suavizadas, e agora acontecerão em meio-segundo. */
+
 h3 {
     background-color: black;
     color:white;
@@ -157,20 +163,28 @@ alinhamento de texto, margem, sombra e arredondamento de borda. */
     margin:2%;
 }
 
+/* O texto "h2" da seção de contato terá uma margem pequena. */
+
 #contatos li {
     display:block;
     text-align: center;
     font-size:medium;
 }
 
+/* Os elementos de lista da seção de contato aparecerão no centro, e texto médio. */
+
 #contatos a {
     text-decoration: none;
     color:black;
 }
 
+/* Os elementos-âncora da seção de contato terão texto preto e nenhuma decoração de texto. */
+
 #contatos a:hover {
     color:#777;
 }
+
+/* Ao flutuar sobre um elemento-âncora da seção de contato, sua cor mudará. */
 
 input[type=text], select {
     width: 100%;
@@ -181,6 +195,9 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+/* A seção de inserir texto e de selecionar opções na seção de formulário terão a mesma
+estilização. */
 
 input[type=submit] {
     width: 100%;
@@ -194,6 +211,8 @@ input[type=submit] {
     font-size: xx-large;
 }
 
+/* A estilização do botão de enviar na seção de formulário terá uma estilização própria. */
+
 #formulário {
     border-radius: 5px;
     background-color: #ffffff;
@@ -201,17 +220,26 @@ input[type=submit] {
     margin:2%;
 }
 
+/* O formulário terá um corpo próprio, com margem e 'padding' (recheio). Também existirá
+uma cor de fundo e uma borda um pouco arredondada. */
+
 .imagensLogo {
     background-color: whitesmoke;
     width:10%;
     min-width:100px;
 }
 
+/* Os logotipos do "Github" e "Codewars" no final da página terão um fundo e largura específica
+e mínima.*/
+
 #barranav > #voltar {
     white-space: nowrap;
     float:right;
     margin-right: 2%;
 }
+
+/* O botão 'Aperte para voltar!' na barra de navegação ficará na direita, com todo o texto
+em uma linha só, e uma pequena margem à direita.*/
 
 @media only screen and (min-width: 768px) {
     #contatos li {
@@ -232,3 +260,27 @@ input[type=submit] {
         font-size: large;
     }
 }
+
+/* Caso a tela do usuário seja maior do que um celular, as seguintes estilizações serão
+aplicadas à página. */
+
+#esconder {
+    background-color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    font-size:xx-large;
+    margin:2%;
+    padding:1%;
+    border: 5px solid rgb(234, 255, 0);
+}
+
+/* A estilização do botão para esconder a seção de "habilidades". */
+
+#esconder:hover {
+    transition:500ms;
+    background-color: #ffffff;
+    color: black;
+    border-color:rgb(51, 0, 255)
+}
+
+/* A estilização do botão para esconder a seção de "habilidades" após flutuarmos sobre
+o mesmo. */
