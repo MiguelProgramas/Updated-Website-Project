@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">
     <link rel="icon" type="images/png" href="images/js.png"/>
+
     <title>Meu perfil</title>
 </head>
 <body>
 
     <ul id="barranav">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobre" onclick="opacidadeSobre()">Sobre</a></li>
+        <li><a href="#habilidades" onclick="opacidadeHabilidades()">Habilidades</a></li>
+        <li><a href="#contato" onclick="opacidadeContato()">Contato</a></li>
         <li id="voltar"><a href="#topo">Aperte para voltar!</a></li>
         <li><div id="navBarRight"><button><img src="images/lupa.png" alt="lupa de pesquisa"></button></div></li>
     </ul>
@@ -24,15 +26,14 @@
     <h1>Sou um programador.</h1>
 
     <!--Apenas dois headers grandes. -->
-
     <a href="https://www.youtube.com/watch?v=9jPNe_dKm0w"><img src="images/morgana.jpg" alt="avatar" id="sobre"></a>
 
     <!--O avatar escolhido como imagem principal. -->
 
-    <div class="silhueta">
-        <h1>Sobre</h1>
+    <div  id="sobre" class="silhueta">
+        <h1 >Sobre</h1>
         <h2>Sou Miguel Pereira Lima</h2>
-        <h2>Programador-iniciante</h2>
+        <h2 >Programador-iniciante</h2>
         <h2>Já conheci algumas linguagens de programação e marcação, como:</h2>
     
         <div id="linguagens">
@@ -49,6 +50,7 @@
         O "id": "linguagens" apenas especifica a aparência das linguagens apresentadas.-->
 
     <div class="silhueta">
+        <button id="esconder" onclick="esconderHabilidades()">Aperte aqui!</button>
         <h1 id="habilidades">Habilidades</h1>
         <h2 id="introduchabil">Apenas seria normal querer saber mais sobre mim, eis algumas das minhas mais relevantes <i>skills</i>.</h2>
         <div id="habilidadesInteiras">
@@ -88,7 +90,7 @@
 
     <!-- A silhueta é mais uma vez aplicada. Os "id"s especificam a sua aparência e tudo compõe a página de contato.-->
 
-    <form id="formulário">
+    <form name="form" id="formulário" onsubmit="return validateForm()">
         <label for ="primeiroNome">Nome</label>
         <input type="text" id="primeiroNome" name="primeirissimo" placeholder="Seu nome...">
 
@@ -99,7 +101,7 @@
         <input type="text" id="e-mail" name="e-mail" placeholder="Seu e-mail...">
 
         <label for ="mensagem">Mensagem</label>
-        <input type="text" id="mensagem" name="mensagem" placeholder="Sua mensagem...">
+        <input type="text" id="mensagem" name="mensagem" placeholder="Sua mensagem..." >
 
         <label for ="motivo">Motivo de sua mensagem</label>
         <select id="motivo" name="motivo">
